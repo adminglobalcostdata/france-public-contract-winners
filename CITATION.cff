@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below and credit the original source."
+title: "France Public Contract Winners by SIREN (DECP)"
+type: dataset
+authors:
+  - family-names: "Bousquet"
+    given-names: "Henri"
+abstract: "French public contract winners aggregated by supplier SIREN: contracts, declared total EUR, buyers, CPV codes, region, years. Embedded data, pay per row."
+url: "https://apify.com/phonic_lily/france-public-contract-winners"
+repository-code: "https://github.com/adminglobalcostdata/france-public-contract-winners"
+date-released: 2026-11-12
+keywords:
+  - open-data
+  - dataset
+  - json
+  - jsonl
+  - apify
+  - apify-actor
+  - data-api
+  - france

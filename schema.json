@@ -1,0 +1,89 @@
+{
+ "columns": [
+  {
+   "name": "supplier_siren",
+   "type": "string",
+   "description": "Supplier SIREN (9 digits)."
+  },
+  {
+   "name": "supplier_name",
+   "type": "string",
+   "description": "Most frequent legal name of the supplier."
+  },
+  {
+   "name": "supplier_size",
+   "type": "string",
+   "description": "PME / ETI / GE, null if unknown."
+  },
+  {
+   "name": "supplier_city",
+   "type": "string",
+   "description": "City of the supplier on its latest contract."
+  },
+  {
+   "name": "supplier_department",
+   "type": "string",
+   "description": "Department name of the supplier."
+  },
+  {
+   "name": "supplier_region",
+   "type": "string",
+   "description": "Region derived from the department, null for overseas collectivities."
+  },
+  {
+   "name": "contracts_count",
+   "type": "number",
+   "description": "Number of distinct contracts."
+  },
+  {
+   "name": "contracts_with_amount_count",
+   "type": "number",
+   "description": "Contracts with a usable declared amount (counted in the total)."
+  },
+  {
+   "name": "contracts_amount_excluded_count",
+   "type": "number",
+   "description": "Contracts whose amount was left out because flagged suspect or aberrant."
+  },
+  {
+   "name": "total_declared_amount_eur",
+   "type": "number",
+   "description": "Sum of usable declared amounts in EUR, null if none, never 0."
+  },
+  {
+   "name": "first_notification_date",
+   "type": "string",
+   "description": "Earliest notification date (ISO)."
+  },
+  {
+   "name": "last_notification_date",
+   "type": "string",
+   "description": "Latest notification date (ISO)."
+  },
+  {
+   "name": "distinct_buyers_count",
+   "type": "number",
+   "description": "Number of distinct buyers (SIRET)."
+  },
+  {
+   "name": "top_buyers",
+   "type": "array",
+   "description": "Up to 5 buyers: buyer_siret, buyer_name, contracts."
+  },
+  {
+   "name": "top_cpv_codes",
+   "type": "array",
+   "description": "Up to 5 CPV codes: cpv_code, contracts."
+  },
+  {
+   "name": "top_cpv_codes_list",
+   "type": "string",
+   "description": "Space-separated top CPV codes (used by cpvPrefix)."
+  },
+  {
+   "name": "active_years",
+   "type": "array",
+   "description": "Notification years with at least one contract."
+  }
+ ]
+}
